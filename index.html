@@ -12,12 +12,30 @@
         }
 
         .card {
-            height: 1000px !important; /* Set the card height to 1000px */
+            height: 1000px !important;
+        }
+
+        /* Create a class for the dynamic background transition */
+        .dynamic-bg {
+            background-color: #3498db; /* Initial background color */
+            animation: colorChange 10s infinite alternate; /* Apply the colorChange animation */
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: #3498db; /* Initial background color */
+            }
+            50% {
+                background-color: #e74c3c; /* Midway background color */
+            }
+            100% {
+                background-color: #3498db; /* Final background color */
+            }
         }
     </style>
 </head>
 <body>
-    <header class="bg-dark text-light text-center py-4">
+    <header class="bg-dark text-light text-center py-4 dynamic-bg"> <!-- Add dynamic-bg class to header -->
         <h1>Talim e Kavaif</h1>
     </header>
 
@@ -28,7 +46,7 @@
                     <img src="https://raw.githubusercontent.com/Mahsanali0786/Resume-app/main/assets/image1.png" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                         <h5 class="card-title">Image 1</h5>
-                        <p class="card-text">This is the description for Image 1.</p>
+                        <p class="card-text">Multi resume profiles</p>
                         <p class="card-text">Index: 1</p>
                     </div>
                 </div>
@@ -38,19 +56,19 @@
                     <img src="https://raw.githubusercontent.com/Mahsanali0786/Resume-app/main/assets/image2.png" class="card-img-top" alt="Image 2">
                     <div class="card-body">
                         <h5 class="card-title">Image 2</h5>
-                        <p class="card-text">This is the description for Image 2.</p>
+                        <p class="card-text">Edit profile details</p>
                         <p class="card-text">Index: 2</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/Mahsanali0786/Resume-app/main/assets/image3.png" class="card-img-top" alt="Image 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Image 3</h5>
-                        <p class="card-text">This is the description for Image 3.</p>
-                        <p class="card-text">Index: 3</p>
-                    </div>
+                <div class "card">
+                <img src="https://raw.githubusercontent.com/Mahsanali0786/Resume-app/main/assets/image3.png" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <h5 class="card-title">Image 3</h5>
+                    <p class="card-text">Fill out personal info</p>
+                    <p class="card-text">Index: 3</p>
+                </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
@@ -58,7 +76,7 @@
                     <img src="https://raw.githubusercontent.com/Mahsanali0786/Resume-app/main/assets/image4.png" class="card-img-top" alt="Image 4">
                     <div class="card-body">
                         <h5 class="card-title">Image 4</h5>
-                        <p class="card-text">This is the description for Image 4.</p>
+                        <p class="card-text">Select your template</p>
                         <p class="card-text">Index: 4</p>
                     </div>
                 </div>
@@ -68,7 +86,7 @@
                     <img src="https://raw.githubusercontent.com/Mahsanali0786/Resume-app/main/assets/image5.png" class="card-img-top" alt="Image 5">
                     <div class="card-body">
                         <h5 class="card-title">Image 5</h5>
-                        <p class="card-text">This is the description for Image 5.</p>
+                        <p class="card-text">Check and download.</p>
                         <p class="card-text">Index: 5</p>
                     </div>
                 </div>
